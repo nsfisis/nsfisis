@@ -9,9 +9,8 @@ s = '
 > . > +++++ . >> ++ . < +++++ . < . > . < .
 '
 
-m=[p=n=0,0,0,0,0];c=-1;case s[c];when'>';p+=1;when'<';p-=1
-when'+';m[p]+=1;when'-';m[p]-=1;when'.';print m[p].chr;when
-'[';loop{;case s[c+=1];when'[';n+=1;when']';break if n==0;
-n-=1;end;}if m[p]==0;when']';loop{;case s[c-=1];when']';n+=1
-;when'[';break if n==0;n-=1;end;}if m[p]!=0;end while s[c+=1]
+m=[c=p=0,0,0,0,0];(k=s[c])=='>'?p+=1:k=='<'?p-=1:
+k=='+'?m[p]+=1:k=='-'?m[p]-=1:k=='.'?putc(m[p]):
+k=='['?(0until s[c+=1]==']'if m[p]==0):
+k==']'?(0until s[c-=1]=='['if m[p]!=0):0while s[c+=1]
 ```
