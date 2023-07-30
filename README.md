@@ -1,16 +1,17 @@
 ```ruby
-s = '
-+++++ +++++
-[
-  > +++++ +++++ + > +++++ +++++ +
-  > +++++ +++++ > +++++ +++++
-  <<<< -
-]
-> . > +++++ . >> ++ . < +++++ . < . > . < .
-'
+MyName = "nsfisis"
 
-m=[c=p=0,0,0,0,0];(k=s[c])=='>'?p+=1:k=='<'?p-=1:
-k=='+'?m[p]+=1:k=='-'?m[p]-=1:k=='.'?putc(m[p]):
-k=='['?(0until s[c+=1]==']'if m[p]==0):
-k==']'?(0until s[c-=1]=='['if m[p]!=0):0while s[c+=1]
+ss = [
+  "GHlBH", "2,a0KLG", "Rc1_g",
+  "![oLhVE", "2,a0KLG",
+  "![oLhVE", "2,a0KLG",
+]
+
+puts ss
+  .map{|s| s
+    .each_char
+    .map{(_1.ord + 12323).chr(Encoding::UTF_8)}
+    .join}
+  .zip(MyName.each_char)
+  .map{"#{_2} | #{_1}"}
 ```
