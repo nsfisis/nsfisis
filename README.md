@@ -1,17 +1,24 @@
-```ruby
-MyName = "nsfisis"
+```
+#<?php
 
-ss = [
-  "GHlBH", "2,a0KLG", "Rc1_g",
-  "![oLhVE", "2,a0KLG",
-  "![oLhVE", "2,a0KLG",
-]
+###############################################################
+#                                                             #
+#  This program is a "polyglot" of Ruby, Perl, Bash and PHP.  #
+#                                                             #
+#                 Run it on each interpreter.                 #
+#                                                             #
+###############################################################
 
-puts ss
-  .map{|s| s
-    .each_char
-    .map{(_1.ord + 12323).chr(Encoding::UTF_8)}
-    .join}
-  .zip(MyName.each_char)
-  .map{"#{_2} | #{_1}"}
+false&&1<<0;
+$a='';$/*0;#*/$a
+=begin
+();1?
+0
+: //;echo "#nsfisis";:<<'nil;'
+1;function begin(){}echo"nsfisis\n";$a=<<<'nil'
+=end
+puts"#nsfisis";'
+=cut
+print"#nsfisis\n";'# ';
+nil;
 ```
