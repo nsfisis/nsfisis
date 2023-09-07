@@ -12,7 +12,7 @@
 false&&1<<0;
 $a='';$/*0;#*/$a
 =begin
-();1?
+()?
 0
 : //;echo "#nsfisis";:<<'nil;'
 1;function begin(){}echo"nsfisis\n";$a=<<<'nil'
